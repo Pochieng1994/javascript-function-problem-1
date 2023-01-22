@@ -4,18 +4,29 @@ word in the string.
 1. Define a Javascript function that accepts a string as a parameter. 
 2. I would use the split method to split the string passed in as a parameter into an array named
  arrayOfWords.
-3. After creating the arrayOfWords array I would then move on to write a for loop statement that
-references the array I created named arrayOfWords.
+3. After creating the words array I would write define a variable called longestWord and set
+it equal to an empty string.
+4. I would then go ahead and and write a for of statement with some logic that compares the words
+in the array with the word in the longestWord variable.
+5. Once finished with the for Of statement I would return longestWord then console.log my 
+longestWordInString function input my argument and let my function 
 */
 
 function longestWordInString(myString) {
-  let arrayOfWords = myString.split (' ');
-  for (let i = 0; i < arrayOfWords.length; i++) {
-    console.log('Peter');
+  let words = myString.split (' ');
+  let longestWord = '';
+
+  for (const word of words) {
+    if(word.length > longestWord.length){
+      longestWord = word
+    }
   }
+
+  return longestWord;
+
 }
 
-longestWordInString ('My name is Peter');
+console.log(longestWordInString('Hi my name is Peter'));
 
 
 

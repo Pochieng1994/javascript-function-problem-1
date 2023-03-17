@@ -19,8 +19,8 @@ const thailand = {
 };
 
 function deleteObjectProperty(object, property) {
-  delete object[property];
+  delete object.property;
   return object;
 }
 
-console.log(deleteObjectProperty(thailand, 'religion'));
+console.log(deleteObjectProperty(thailand, religion));

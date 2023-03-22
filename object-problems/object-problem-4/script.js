@@ -22,8 +22,3 @@ function checkForKey(object, key) {
     console.log('The Key does not exist in the Object')
   }
 }
-
-
-
-
-
